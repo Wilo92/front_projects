@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FECONDER</title>
+    <link rel="icon" href="images/Feconder.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aab2c8fc51.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <!------------------------------->
+            <!--para crear el menu superior-->
+            <div class="container">
+                <nav id="Header">
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <!--<li><a href="#header">Inicio</a></li>-->
+                        <li><a href="#about"><b>Conocenos</b></a></li>
+                        <li><a href="#contact"><b>Contáctanos</b></a></li>
+                        <li><a href="https://forms.gle/Ww19JhanXZ67Tdp36" target="_blank"><b>Afiliate</b></a></li>
+                        <!--   <li><a href="#portfolio">portafolio</a></li> -->
+                        <!--<li><a href="pagina_projects/projects.html"><b>Projects</b></a></li>--->
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-txt">
+
+                    <h2>Fondo de Empleados Contralorias <br> <span>“Ahorro permanente
+                            para el beneficio de todos”.</span> <br> </h2>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <article>
+        <section>
+            <div>
+                <!--codigo para crear las dos columnas en la seccion acerca de mi-->
+                <div id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="about-col-1">
+                                <img src="images/feconder.jpg">
+                            </div>
+                            <div class="about-col-2">
+                                <h1 class="sub-title">Proposito superior</h1>
+                                <p>Impulsar el bienestar integral y la prosperidad de nuestros afiliados mediante el
+                                    fomento del ahorro permanente, la gestión responsable de los recursos y la
+                                    construcción de una comunidad solidaria, garantizando siempre el beneficio colectivo
+                                    y la protección del patrimonio de todos.
+
+                                    <br><br>
+
+                                </p>
+                                <!---titulos de la secion about me-->
+                                <div class="tab-titles">
+                                    <p class="tab-links active-tab" onclick="opentab('education')">Historia</p>
+                                    <p class="tab-links" onclick="opentab('copnia')">Misión</p>
+                                    <p class="tab-links" onclick="opentab('experience')">Visión</p>
+                                    <!--<p class="tab-links" onclick="opentab('supervision')">Supervision</p>
+
+                                    <p class="tab-links" onclick="opentab('cursos')">Courses</p>--->
+
+                                </div>
+                                <div class="tab-contents active-tab" id="education">
+                                    <ul>
+                                        <li><span><b>NUESTRA HISTORIA</b></span><br>
+                                            <br>El Fondo de Empleados de la Contraloría General del Risaralda fue
+                                            constituido en el año 1999, con el propósito de fortalecer la solidaridad y
+                                            el bienestar de sus afiliados, bajo el lema “Ahorro permanente para el
+                                            beneficio de todos”. <br>
+
+                                            Desde sus inicios, el Fondo ha desempeñado un papel fundamental en la vida
+                                            de los empleados, brindando acceso a créditos y servicios que han
+                                            contribuido a mejorar la calidad de vida y el bienestar de sus asociados y
+                                            sus familias. <br><br>
+
+                                            A lo largo de los años, el Fondo ha evolucionado y se ha actualizado para
+                                            responder a los retos del entorno, modernizando sus procesos y fortaleciendo
+                                            su
+                                            estructura para ser competitivo en el sector de la economía solidaria.
+                                            Actualmente, el Fondo
+                                            está vigilado por la Superintendencia de la Economía Solidaria
+                                            (Supersolidaria), lo que garantiza
+                                            transparencia y confianza en la gestión de los recursos y la protección del
+                                            patrimonio tanto
+                                            del Fondo como de sus afiliados. <br><br>
+                                            El Fondo de Empleados de la Contraloría General del Risaralda ha
+                                            establecido alianzas estratégicas que permiten a sus asociados acceder a
+                                            servicios y productos con precios preferenciales, ampliando así los
+                                            beneficios y el bienestar que ofrece. Su gestión se caracteriza por el
+                                            acompañamiento cercano, el sentido de pertenencia y la disposición
+                                            constante para atender las necesidades de sus afiliados, quienes
+                                            encuentran en el Fondo una verdadera familia solidaria.
+
+                                            Hoy, el Fondo continúa su misión de apoyar a sus asociados, sin importar
+                                            su tipo de vinculación, reafirmando su compromiso de ser un respaldo en
+                                            cada etapa de sus vidas y consolidándose como un referente de confianza
+                                            y servicio en la región. <br><br>En 2024, FECONDER se consolida como el
+                                            Fondo de Empleados referente en las contralorías del país, reconocido por su
+                                            solidez, servicios innovadores y compromiso con el bienestar integral de sus
+                                            asociados, promoviendo el ahorro permanente para el beneficio de todos,
+                                            desde 1999.
+
+
+                                    </ul>
+                                </div>
+
+                                <div class="tab-contents" id="copnia">
+                                    <ul>
+
+                                        <li><span><b>MISIÓN</b></span><br><br>
+                                            Brindar a nuestros afiliados servicios financieros y sociales con calidad,
+                                            oportunidad y transparencia, fomentando el ahorro permanente y el acceso a
+                                            créditos solidarios que contribuyan al bienestar integral y la mejora
+                                            continua de su calidad de vida, acompañándolos como una familia comprometida
+                                            con su desarrollo y protección patrimonial.
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="tab-contents" id="experience">
+                                    <ul>
+                                        <li><span><b>VISIÓN</b></span><br> <br>
+                                            Ser reconocidos para 2030 como el Fondo de Empleados líder en el País,
+                                            caracterizado por su solidez, competitividad y gestión innovadora, que
+                                            fortalece la solidaridad y el bienestar de todos sus afiliados, ampliando
+                                            alianzas estratégicas y garantizando la sostenibilidad y el beneficio
+                                            colectivo bajo el lema “Ahorro permanente para el beneficio de todos”.
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+                                <div class="tab-contents" id="supervision">
+                                    <ul>
+                                        <li><span><b>SUPERVISION CO1.PCCNTR.5621212
+                                                    CPS-CGR-36-2023</b></span><br>"Acquisition,
+                                            implementation and start-up of
+                                            Technological tool that allows the management of audits based on
+                                            risks,
+                                            that
+                                            Centralize and manage information generated in the audit process
+                                            (planning,
+                                            Execution and communication of results) including work papers and the
+                                            Monitoring of improvement plans for their application in audits
+                                            made
+                                            by
+                                            Territorial supreme audit entities in the process of
+                                            surveillance
+                                            fiscal
+                                            Of the audit processes"
+                                        </li>
+                                        <li><span><b>SUPERVISION CO1.PCCNTR.5313412-2023.</b></span><br>
+                                            Acquisition two servers, windows server 2022 license and 50 access cals,
+                                            vmware and veeam backup license, network storage implement, support and
+                                            service.
+
+                                        </li>
+                                        <li><span><b>SUPERVISIÓN CGR-IPMC-013-SEPTIEMBRE 2020</b></span><br>Provide
+                                            professional service for make preventive and corrective maintenance about
+                                            all computing elements, servers, pc, printers network devices and parts.
+                                        </li>
+                                        <li><span><b>SUPERVISIÓN PRESTACIÓN DE SERVICIOS NO. CPS-06-2020.</b></span><br>
+                                            Provide help services for fortificate the communication channels and
+                                            interaction between the Contraloria General del Risaralda and the general
+                                            citizen a through ICT and digital government strategy
+
+                                        </li>
+                                        <li><span><b>SUPERVISIÓN CGR-SAMC-05-2019</b></span><br>Supply, change and
+                                            installation of structured voice and data cabling, UTP CAT7 cabling in the
+                                            Risaralda General Comptroller building. </li>
+                                        <li><span><b>SUPERVISIÓN CGR-IPMC-09-2019.</b></span><br>Professional service
+                                            for make preventive and corrective maintenance about all computing elements,
+                                            servers, pc, printers network devices and parts.
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+
+
+                                <div class="tab-contents" id="cursos">
+                                    <ul>
+                                        <li>Curso presencial desarrollo Web Front-End</li>
+                                        <li>-Cisco Networking academy NDG Linux Essentials Course</li>
+                                        <li>-Cisco Networking academy NDG Linux Unhatched</li>
+                                        <li>-CCNAv7 Switching, Routing and Wireless Essentials</li>
+                                        <li>-Curso profesional de scrum</li>
+                                        <li>-Curso de introducción a seguridad informatica</li>
+                                        <li>-Introducción a AWS: redes, gobernanza y machine learning</li>
+                                        <li>-Concepto Básico de diseño de interfaces</li>
+                                        <li>-Bitcoin y Blockchain</li>
+                                        <li>-Desing thinking con Minds Garage</li>
+                                        <li>-Introduccion al diseño</li>
+                                        <li>-Glosario de terminos de diseño</li>
+                                        <li>-Fundamentos de IA para data y machine learning</li>
+                                        <li>-Vocabulary and Expressions </li>
+                                        <li>-Introduccion a JAVA SE</li>
+                                        <li>-Introduccion a la administracion de servidores Linux</li>
+                                        <li>-Curso basico de photoshop</li>
+                                        <li>-Introduccion a la terminal y linea de comandos</li>
+                                        <li>-Herramientas informaticas Excel</li>
+                                        <li>-Herramientas informaticas word</li>
+                                        <li>-Herramientas informaticas Windows</li>
+                                        <li>-Detección del fraude en caja</li>
+                                        <li>-Automatismos residenciales e industriales</li>
+                                        <li>-Administracion de inventarios</li>
+                                        <li>-Actualización en contratación estatal SECOP II</li>
+                                        <li>-Actualizacion en gestión pública</li>
+                                        <li>-Gerencia del Riesgo</li>
+                                        <li>-Procesos de calidad en las areas administrativas y talento humano</li>
+                                        <li>-Actualizacion en SECOP II</li>
+                                        <li>-Seminario contratación estatal</li>
+
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------services seccion--------->
+
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">Nuestos Servicios</h1>
+                    <div class="services-List">
+                        
+
+                        <div>
+                            <i class="fa-solid fa-piggy-bank"></i>
+                            <h2>Ahorro Seguro</h2>
+                            <p>Tus aportes y ahorros son de tu propiedad y puedes retirarlos al salir del fondo, también
+                                ofrecemos Ahorros a Corto Plazo (Natilleras), productos de ahorro programado diseñados
+                                para ayudarte a cumplir metas a corto plazo, sin cobros por manejo ni el impuesto
+                                4x1000.
+                            </p>
+
+                            <a href="#"></a>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-coins"></i>
+                            <h2>Prestamos ágiles y flexibles</h2>
+                            <p>Ofrecemos créditos con solicitud y desembolso rápidos,
+                                requisitos sencillos y tasas de interés más bajas que las del sector financiero
+                                tradicional. Además, contamos con Créditos Extraordinarios, líneas especiales diseñadas
+                                para atender emergencias o necesidades urgentes.
+
+                            </p>
+
+                            <a href="#"></a>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                            <h2>Soluciones integrales</h2>
+                            <p>Ofrecemos servicios diseñados para cubrir tus necesidades financieras, promoviendo el uso
+                                responsable y seguro de los recursos. Además, contamos con Beneficios con Aliados
+                                Estratégicos que incluyen acceso a tarifas preferenciales, descuentos en servicios,
+                                condiciones especiales en créditos, cobertura a nivel nacional, y promociones en
+                                mantenimientos preventivos y correctivos de vehículos, servicios funerarios, asesorías
+                                legales, seguros, así como atención en optometría, odontología, fisioterapia, entre
+                                otros.</p>
+
+                            <a href="#"></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!--contact-->
+
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="contact-left">
+                            <h1 class="sub-title">contactanos.</h1>
+
+                            <p><i class="fa-solid fa-location-dot"></i>Calle 19 No 13-17 Esquina, piso 5 Pereira,
+                                Risaralda Colombia</p>
+                            <p><i class="fa-solid fa-mobile"></i>3106510615</p>
+                            <p><i class="fa-solid fa-envelope-open"></i>asociados.feconder@gmail.com</p>
+
+                            <div class="social-icons">
+
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="https://x.com/?lang=en"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            </div>
+
+                            <a href="images/FECONDER.pdf" download class="btn btn2" target="_blank">DESCARGAR
+                                FOLLETO</a>
+                        </div>
+
+
+
+
+
+                        <div class="contact-right">
+                            <section>
+                                <iframe class="map"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7740524288793!2d-75.69945092274402!3d4.808815328273397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e388746c2e5d171%3A0xdfec04a31a4c133!2sGobernaci%C3%B3n%20De%20Risaralda!5e0!3m2!1ses!2sco!4v1746641974424!5m2!1ses!2sco"
+                                    width="100%" height="450" style="border:0 ;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </section>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+                
+
+                <!--slider section-->
+
+                <div class="nuestros">
+                    <h2>NUESTROS ALIADOS</h2>
+
+                </div>
+
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="images/1.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/2.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/3.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/4.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/5.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/6.png" alt="">
+                        </div>
+
+
+
+
+
+
+
+                        <!---se repiten las mismas imagenes de arriba-->
+
+                        <div class="slide">
+                            <img src="images/1.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/2.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/3.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/4.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/5.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/6.png" alt="">
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+        </section>
+
+        <!---pie de pagina-->
+
+    </article>
+
+    <div class="copyright">
+        <p>Created by @Wilo<br><i class="fa-solid fa-glasses"></i></p>
+    </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

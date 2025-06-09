@@ -36,11 +36,8 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.contraloriarisaralda.gov.co/" target="_blank">Web</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="https://www.contraloriarisaralda.gov.co/" target="_blank">Sitio
+                            Web</a>
                     </li>
 
                     <li class="nav-item">
@@ -72,7 +69,7 @@
         <!---SE DEFINE EL ORDEN DE LAS IMAGENES Y SE CARGAN AL CAROUSEL-->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/banner2.gif" class="d-block w-100" alt="">
+                <img src="img/banner.gif" class="d-block w-100" alt="">
                 <div class="carousel-caption">
                     <a href="#" class="btn-btn-primary mt-3"></a>
                 </div>
@@ -90,20 +87,7 @@
             </div>
         </div>
 
-        <!----
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="img/car3.jpg" class="d-block w-100" alt="">
-                <div class="carousel-caption">
-                    <h5>Los mejores vehiculos de Colombia</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia maiores
-                        ipsam error accusamus architecto, vitae non at consequatur temporibus
-                        corrupti, debitis dolorem obcaecati vel sed dicta porro. Velit, praesentium
-                        distinctio.</p>
-                    <p><a href="#" class="btn-btn-primary mt-3">Leer mas</a></p>
-                </div>
-            </div>
-        </div>----->
+
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselE1" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -133,9 +117,37 @@
                                 esenciales, permitiendo a los funcionarios acceder a documentos internos
                                 y realizar tramites.
                             </p>
-                            <a href="https://sites.google.com/contraloriarisaralda.gov.co/menuprincipal/inicio?authuser=4&pli=1"
-                                class="btn btn-success" target="_blank">IR A INTRANET</a>
+                            <!-- Botón que abre el modal -->
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#intranetModal">
+                                IR A INTRANET
+                            </button>
 
+                        </div>
+
+                        <div class="modal fade" id="intranetModal" tabindex="-1" aria-labelledby="intranetModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-danger fw-bold id="intranetModalLabel">INTRANET PARA
+                                            FUNCIONARIOS</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Cerrar"></button>
+                                    </div>
+                                    <div class="modal-body text-dark" style="text-align: justify;">
+                                        Para acceder, se requiere contar con una cuenta de correo institucional.
+                                        Si usted es ciudadano, por favor diríjase a la sección de Intranet para
+                                        visitantes.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <a href="https://sites.google.com/contraloriarisaralda.gov.co/menuprincipal/inicio?authuser=4&pli=1"
+                                            class="btn btn-primary" target="_blank">Soy funcionario</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +161,7 @@
                                 y mantenerse conectados con nuestros servicios de manera sencilla y
                                 segura.
                             </p>
-                            <a href="pages/gradiente.html" class="btn btn-primary" target="_blank">IR A INTRANET</a>
+                            <a href="pages/ciudadanos.html" class="btn btn-primary" target="_blank">IR A INTRANET</a>
                         </div>
                     </div>
                 </div>
@@ -422,8 +434,7 @@
                             <h5 class="card-title">FECONDER</h5>
                             <p>Fonde de empleados contralorías
                             </p>
-                            <a href="https://feconder.github.io/"
-                                class="btn btn-success" target="_blank">Abrir</a>
+                            <a href="https://feconder.github.io/" class="btn btn-success" target="_blank">Abrir</a>
                         </div>
                     </div>
                 </div>
@@ -437,8 +448,7 @@
                             <h5 class="card-title">CONVIVENCIA</h5>
                             <p>Comite de convivencia laboral
                             </p>
-                            <a href="#"
-                                class="btn btn-success" target="_blank">Abrir</a>
+                            <a href="#" class="btn btn-success" target="_blank">Abrir</a>
                         </div>
                     </div>
                 </div>

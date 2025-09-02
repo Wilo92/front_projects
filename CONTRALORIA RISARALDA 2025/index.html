@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet Contraloria Risaralda</title>
+    <!--SE LINKEAN LOS CDN DE BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!----FAVICON-->
+    <link rel="icon" href="img/logo2.png" type="image/x-icon">
+
+    <!----SE LINKEA LA HOJA DE STYLOS DE CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!---SE CREA UN NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
+                aria-controls="navbar-start" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand"><span class="text-success">Contraloria General </span> <span
+                    class="text-warning">del Risaralda</span>
+            </a>
+
+            <!----SE APLICAN LOS AJUSTES RESPONSIVE DEL MENU DEL NAVBAR Y SE LISTA LAS OPCIONES DEL MENU DE NAVEGACION-->
+            <div class="collapse navbar-collapse" id="navbar-start">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.contraloriarisaralda.gov.co/" target="_blank">Sitio
+                            Web</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&ddm=1"
+                            target="_blank">Correo
+                            electronico</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-----SE CREA EL CAROUSEL-->
+    <div id="carouselE1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselE1" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="slide 1">
+            </button>
+
+            <button type="button" data-bs-target="#carouselE1" data-bs-slide-to="1" aria-label="slide 2">
+            </button>
+
+            <button type="button" data-bs-target="#carouselE1" data-bs-slide-to="2" aria-label="slide 3">
+            </button>
+        </div>
+
+        <!---SE DEFINE EL ORDEN DE LAS IMAGENES Y SE CARGAN AL CAROUSEL-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner.gif" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <a href="#" class="btn-btn-primary mt-3"></a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselE1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselE1" data-bs-slide="next">
+
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+
+        </button>
+
+    </div>
+
+
+    <!--CONTRUYENDO SECCION DE SERVICIOS-->
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-car1 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Intranet Funcionarios</h3>
+                            <p>Orientada a mejorar la colaboración
+                                y acceso a la información dentro de la Contraloria General del Risaralda, esta
+                                herramienta centraliza todos los recursos
+                                esenciales, permitiendo a los funcionarios acceder a documentos internos
+                                y realizar tramites.
+                            </p>
+                            <!-- Botón que abre el modal -->
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#intranetModal">
+                                IR A INTRANET
+                            </button>
+
+                        </div>
+
+                        <div class="modal fade" id="intranetModal" tabindex="-1" aria-labelledby="intranetModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-success fw-bold id=" intranetModalLabel">INTRANET
+                                            PARA
+                                            FUNCIONARIOS</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Cerrar"></button>
+                                    </div>
+                                    <div class="modal-body text-dark" style="text-align: center;">
+                                        Requiere una cuenta de correo institucional. <br>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <a href="./pages/ciudadanos.html" class="btn btn-primary">Soy
+                                            visitante</a>
+
+                                        <a href="https://sites.google.com/contraloriarisaralda.gov.co/menuprincipal/inicio?authuser=4&pli=1"
+                                            class="btn btn-success">Soy funcionario</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-car2 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Intranet Visitantes</h3>
+                            <p>Nuestra intranet para visitantes ofrece una plataforma diseñada para
+                                que los usuarios externos puedan consultar información relevante, descargar documentos,
+                                y mantenerse conectados con nuestros servicios de manera sencilla y
+                                segura.
+                            </p>
+                            <a href="pages/ciudadanos.html" class="btn btn-primary">IR A INTRANET</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-car3 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">Datos</h3>
+                            <p>Nuestro Portal de Datos es una plataforma avanzada que permite a los usuarios acceder de
+                                manera sencilla y segura a información clave, informes detallados y conjuntos de datos
+                                relevantes para la toma de decisiones y el análisis.
+                            </p>
+                            <a href="pages/datos.html" class="btn btn-success" target="_blank">IR A DATOS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Aplicativos</h2>
+                        <p>En esta sección, encontrarás los accesos directos a las aplicaciones de trabajo.<br>
+                            Solo tienes que hacer clic en el botón 'Abrir'</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card2 bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/saia.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SAIA</h5>
+                            <p>Sistema de gestion documental
+                            </p>
+                            <a href="https://saia-contraloria-risaralda.netsaia.com/views/login/login.php"
+                                class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card2 bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/work.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Google WorkSpace</h5>
+                            <p>Herramientas y aplicaciones
+                            </p>
+                            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AXH0vVuqsgLfNgMnHBmYbPdxTm-EQmtuB2Y2O6ZRhoPCHc5lapiVlU0hPcgaoC-FB_dtVB9WIQl8zA&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S386858827%3A1742313568659717"
+                                class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/Secop.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SECOP II</h5>
+                            <p>Sistema Electrónico de Contratación
+                            </p>
+                            <a href="https://community.secop.gov.co/STS/Users/Login/Index?SkinName=CCE"
+                                class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/observa.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sia Observa</h5>
+                            <p>Sistema Integral de Auditoria
+                            </p>
+                            <a href="https://siaobserva.auditoria.gov.co/Login.aspx?redirect=Inicio"
+                                class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/contralorias.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sia Contralorias</h5>
+                            <p>Sistema de informacion integral
+                            </p>
+                            <a href="https://siacontralorias.auditoria.gov.co/" class="btn btn-success"
+                                target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/paco.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">PACO</h5>
+                            <p>Portal anticorrupción de Colombia
+                            </p>
+                            <a href="https://portal.paco.gov.co/" class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card2 bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/sicof.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SICOF</h5>
+                            <p>Sistema integrado de control fiscal
+                            </p>
+                            <a href="https://saintweb.com.co/sicof/" class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card2 bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/siifweb.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SIIFWEB</h5>
+                            <p>Sistema financiero FMS
+                            </p>
+                            <a href="https://servicio.siifweb.com/" class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card2 bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/gpt.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Chat GPT</h5>
+                            <p>Open AI
+                            </p>
+                            <a href="https://chatgpt.com/" class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/territorios.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Territorios IA</h5>
+                            <p>Territorios IA
+                            </p>
+                            <a href="https://territoriosia.mintic.gov.co/" class="btn btn-success"
+                                target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/rues.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">RUES</h5>
+                            <p>Registro Unico Camaras de comercio
+                            </p>
+                            <a href="https://ruesfront.rues.org.co/" class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/suin.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SUIN</h5>
+                            <p>Sistema de informacion normativa
+                            </p>
+                            <a href="https://www.suin-juriscol.gov.co/" class="btn btn-success"
+                                target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/runt.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">RUNT</h5>
+                            <p>Registro nacional de transito.
+                            </p>
+                            <a href="https://www.runt.gov.co/consultaCiudadana/#/consultaVehiculo"
+                                class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/gemini.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">GEMINI</h5>
+                            <p>Gemini Google.
+                            </p>
+                            <a href="https://www.runt.gov.co/consultaCiudadana/#/consultaVehiculo"
+                                class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <!------LINEA DIVISORA-->
+        <hr class="border-top border-5 border-dotted border-success">
+
+
+
+        <!----SECCION PARA COMITES FECONDER Y OTROS-->
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card2 bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/Feconder.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FECONDER</h5>
+                            <p>Fonde de empleados contralorías
+                            </p>
+                            <a href="https://feconder.github.io/" class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card2 bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/comite.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">CONVIVENCIA</h5>
+                            <p>Comite de convivencia laboral
+                            </p>
+                            <a href="https://forms.gle/WKDEpR37S3gVMFRX7" class="btn btn-success"
+                                target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card2 bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/soporte_observa.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">SOPORTE</h5>
+                            <p>Soporte SIA OBSERVA
+                            </p>
+                            <a href="https://forms.gle/Tc2Mr1B19Jjmt3QH7" class="btn btn-success"
+                                target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md col-lg-3">
+                    <div class="card2 bg-light shadow-sm border-0 px-2 py-3 mb-4">
+                        <div class="text-center">
+                            <img src="img/gat.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">GAT.4</h5>
+                            <p>Guia Tecnica de Auditoria.
+                            </p>
+                            <a href="https://www.contraloria.gov.co/control-fiscal/control-fiscal-micro-proceso-auditor/sinacof/guia-de-auditoria-territorial"
+                                class="btn btn-success" target="_blank">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <footer class="bg-light text-dark pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success text-center">Nosotros</h5>
+                    <hr class="mb-4">
+                    <img src="./img/logo1.png" alt="Contraloria Risaralda" class="d-block mx-auto"
+                        style="max-width: 70%; height: auto;">
+                    <p class="pt-3" style="text-align: justify;">Somos una entidad de carácter técnico con autonomía
+                        administrativa y presupuestal.
+                        El control fiscal es una función pública que ejercerá la Contraloría General del Risaralda, la
+                        cual vigila
+                        la gestión fiscal de la administración y de los particulares o entidades que manejen fondos o
+                        bienes de la Nación en el departamento del Risaralda. </p>
+                </div>
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success  text-center">Ubicación</h5>
+                    <hr class="mb-4">
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7741962272744!2d-75.69698792501994!3d4.808790695166646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3887d233fc5b51%3A0x8950108e9d0a4635!2sContralor%C3%ADa%20General%20de%20Risaralda!5e0!3m2!1ses!2sco!4v1750782579438!5m2!1ses!2sco"
+                            width="100%" height="310" style="border:0;" allowfullscreen="true" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 contacto-izquierda">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success text-center">Contacto</h5>
+                    <hr class="mb-4 ">
+                    <p>
+                        <li class="fas fa-home me-2"></li> Calle 19 No 13-17 Esquina, piso 5 Pereira, Risaralda Colombia
+                    </p>
+                    <p>
+                        <li class="fas fa-envelope me-2"></li>contactenos@contraloriarisaralda.gov.co
+                    </p>
+                    <p>
+                        <li class="fas fa-phone me-2"></li> 3136754039
+                    </p>
+                    <p>
+                        <li class="fab fa-whatsapp me-2"></li> 3136754039
+                    </p>
+                    <p>
+                        <li class="fas fa-clock me-2 text-justify"></li>
+                    <p style="text-align: justify;">Lunes a Jueves de 7:30 am a 12 m y 01:00 pm a
+                        4:30 pm Viernes de 7:30 am a 3:30 pm</p>
+
+                    </p>
+
+
+                </div>
+                <hr class="mb-4">
+                <div class="text-center mb-2">
+                    <p>
+                        Siguenos en redes sociales.
+
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/contraloria.risaralda.2025?locale=es_LA"
+                                class="text-dark"> <i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/contraloriarisaraldaoficial/" class="text-dark"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/ContraloriaGeneraldelRisaralda?locale=es_LA"
+                                class="text-dark"> <i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.contraloriarisaralda.gov.co/" class="text-dark"><i
+                                    class="fas fa-globe"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="text-success text-center font-weight-bold">Creado por Contraloria General del Risaralda
+                        <br>@Wilo
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-----SE INSERTA EL CDN DE STYLOS DE JAVA SCRITO EN BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

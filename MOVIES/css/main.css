@@ -1,0 +1,532 @@
+/* Importa la fuente Poppins de Google Fonts con todos los pesos y estilos disponibles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos globales que se aplican a todos los elementos */
+* {
+    margin: 0;
+    /* Elimina todos los márgenes externos */
+    padding: 0;
+    /* Elimina todo el padding interno */
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho total del elemento */
+}
+
+/* Define variables CSS personalizadas para reutilizar en todo el sitio */
+:root {
+    --primary: #ff3700;
+    /* Variable para el color primario naranja */
+}
+
+/* Estilos para el cuerpo principal de la página */
+body {
+    /*background: #000000; /* Fondo negro para toda la página */
+    font-family: 'poppins', sans-serif;
+    /* Usa la fuente Poppins con fallback a sans-serif */
+}
+
+/* Estilos para el encabezado de la página */
+header {
+    position: absolute;
+    /* Posicionamiento absoluto para que flote sobre el contenido */
+    top: 0;
+    /* Coloca en la parte superior de la pantalla */
+    left: 0;
+    /* Coloca en la parte izquierda de la pantalla */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    display: flex;
+    /* Usa flexbox para organizar los elementos horizontalmente */
+    justify-content: space-between;
+    /* Distribuye elementos con espacio entre ellos */
+    align-items: center;
+    /* Centra elementos verticalmente en el centro */
+    padding: 30px 100px;
+    /* Padding interno: 30px arriba/abajo, 100px izquierda/derecha */
+    z-index: 10;
+    /* Nivel de apilamiento para que esté por encima de otros elementos */
+}
+
+/* Estilos para el logo del sitio */
+.logo {
+    font-size: 40px;
+    /* Tamaño de fuente grande para el logo */
+    color: #ffffff;
+    /* Color blanco para el texto del logo */
+    letter-spacing: 1px;
+    /* Espaciado entre letras para mejor legibilidad */
+    font-weight: 800;
+    /* Peso de fuente muy grueso para destacar */
+}
+
+/* Estilos para la barra de navegación */
+.nav {
+    display: flex;
+    /* Usa flexbox para organizar los elementos de navegación horizontalmente */
+}
+
+/* Estilos para cada elemento de la lista de navegación */
+.nav li {
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    margin: 0 10px;
+    /* Margen horizontal de 10px entre elementos */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav li a {
+    color: #ffffff;
+    /* Color blanco para los enlaces */
+    text-decoration: none;
+    /* Sin subrayado en los enlaces */
+    font-weight: 500;
+    /* Peso de fuente medio */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+    cursor: pointer;
+    /* Cursor de mano al pasar sobre los enlaces */
+    transition: 0.3s;
+    /* Transición suave de 0.3 segundos para cambios de color */
+}
+
+/* Estilos cuando se pasa el mouse sobre los enlaces de navegación */
+.nav li:hover a {
+    color: var(--primary);
+    /* Cambia al color primario (naranja) al hacer hover */
+}
+
+/* Estilos para el contenedor de búsqueda */
+.search {
+    position: relative;
+    /* Posicionamiento absoluto para posicionarlo exactamente */
+    width: 300px;
+    /* Ancho fijo del campo de búsqueda */
+    height: 40px;
+    /* Alto fijo del campo de búsqueda */
+}
+
+/* Estilos para el campo de entrada de búsqueda */
+.search input {
+    position: absolute;
+    /* Posicionamiento absoluto dentro del contenedor */
+    left: 0;
+    /* Coloca a la izquierda del contenedor */
+    top: 0;
+    /* Coloca arriba del contenedor */
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    height: 100%;
+    /* Ocupa todo el alto del contenedor */
+    color: #ffffff;
+    /* Color del texto blanco */
+    background: transparent;
+    /* Fondo transparente */
+    border: 1 solid rgba(255, 255, 255, 0.5);
+    /* Borde blanco semi-transparente */
+    outline: none;
+    /* Sin contorno al hacer focus en el campo */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    padding: 0 10px 0 45px !important;
+    /* Padding interno con espacio para el icono de búsqueda */
+    backdrop-filter: blur(10px);
+    /* Efecto de desenfoque del fondo para efecto glassmorphism */
+}
+
+/* Estilos para el texto placeholder del campo de búsqueda */
+.search input::placeholder {
+    color: #ffffff;
+    /* Color blanco para el texto placeholder */
+}
+
+/* Estilos para el icono de búsqueda */
+.search i {
+    position: absolute;
+    /* Posicionamiento absoluto para posicionarlo exactamente */
+    top: 50%;
+    /* Centra verticalmente en el contenedor */
+    transform: translateY(-50%);
+    /* Ajusta la posición vertical para centrarlo perfectamente */
+    left: 10px;
+    /* Posición desde la izquierda del contenedor */
+    padding-right: 10px;
+    /* Padding derecho para separarlo del texto */
+    color: #ffffff;
+    /* Color blanco para el icono */
+    border-right: 1px solid #ffffff;
+    /* Borde derecho blanco para separar el icono del texto */
+}
+
+/* Estilos para el banner principal de la página */
+.banner {
+    position: relative;
+    /* Posicionamiento relativo para el contexto de posicionamiento */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    min-height: 100vh;
+    /* Altura mínima de toda la pantalla visible */
+    padding: 0 100px;
+    /* Padding horizontal de 100px en ambos lados */
+    display: flex;
+    /* Usa flexbox para organizar el contenido */
+    justify-content: space-between;
+    /* Distribuye elementos con espacio entre ellos */
+    align-items: center;
+    /* Centra elementos verticalmente en el centro */
+    background: url(../images/movies/bg-little-mermaid.jpg) no-repeat;
+    /* Imagen de fondo de La Sirenita */
+    background-size: cover;
+    /* La imagen cubre todo el contenedor */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    overflow: hidden;
+    /* Oculta el contenido que se desborda del contenedor */
+    transition: 0.5s;
+    /* Transición suave de 0.5 segundos para cambios */
+}
+
+/* Pseudo-elemento que crea una capa oscura sobre el banner */
+.banner::before {
+    position: absolute;
+    /* Posicionamiento absoluto */
+    content: '';
+    /* Contenido vacío para crear el pseudo-elemento */
+    top: 0%;
+    /* Posición superior */
+    left: 0%;
+    /* Posición izquierda */
+    right: 0%;
+    /* Posición derecha */
+    bottom: 0;
+    /* Posición inferior */
+    width: 100%;
+    /* Ancho del 10% del contenedor */
+    height: 100%;
+    /* Alto completo del contenedor */
+    background-color: rgb(0, 0, 0, 0.7);
+    /* Fondo negro semi-transparente para oscurecer */
+}
+
+/* Estilos para el contenido principal del banner */
+.content {
+    position: relative;
+    /* Posicionamiento relativo */
+    max-width: 550px;
+    /* Ancho máximo del contenido */
+    display: none;
+    /* Inicialmente oculto */
+    visibility: hidden;
+    /* Invisible para lectores de pantalla */
+    transform: scale(0);
+    /* Escala 0 (invisible) */
+    transition: 0.5s;
+    /* Transición suave de 0.5 segundos */
+}
+
+/* Estilos cuando el contenido está activo y visible */
+.content.active {
+    display: block;
+    /* Se muestra como bloque */
+    visibility: visible;
+    /* Visible para lectores de pantalla */
+    transform: scale(1);
+    /* Escala normal (visible) */
+    transition: 0.5s;
+    /* Transición suave de 0.5 segundos */
+}
+
+/* Estilos para el título de la película */
+.movie-title {
+    max-width: 250px;
+    /* Ancho máximo del título */
+}
+
+/* Estilos para el encabezado h4 que muestra información de la película */
+.banner .content h4 {
+    color: rgba(255, 255, 255, 0.5);
+    /* Color blanco semi-transparente */
+    font-weight: 400;
+    /* Peso de fuente normal */
+    font-size: 30px;
+    /* Tamaño de fuente grande */
+}
+
+/* Estilos para cada span dentro del h4 (año, clasificación, duración, género) */
+.banner .content h4 span {
+    padding: 0% 10px;
+    /* Padding horizontal para separar elementos */
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    /* Borde derecho blanco semi-transparente */
+}
+
+/* Estilos para el primer span (año) */
+.banner .content h4 span:first-child {
+    padding-left: 0;
+    /* Sin padding izquierdo para el primer elemento */
+}
+
+/* Estilos para el último span (género) */
+.banner .content h4 span:last-child {
+    border-right: none;
+    /* Sin borde derecho para el último elemento */
+}
+
+/* Estilos para la clasificación de edad (12+) */
+.banner .content h4 span i {
+    background: var(--primary);
+    /* Fondo del color primario (naranja) */
+    color: #ffffff;
+    /* Color blanco para el texto */
+    padding: 0 8px;
+    /* Padding horizontal para el badge */
+    display: inline-block;
+    /* Muestra como bloque en línea */
+    border-radius: 2px;
+    /* Bordes redondeados para el badge */
+}
+
+/* Estilos para la descripción de la película */
+.banner .content p {
+    font-size: 1em;
+    /* Tamaño de fuente normal */
+    font-weight: 300;
+    /* Peso de fuente ligero */
+    line-height: 1.5em;
+    /* Altura de línea para mejor legibilidad */
+    color: #ffffff;
+    /* Color blanco para el texto */
+    margin: 10px 0 20px;
+    /* Márgenes verticales para separar del contenido */
+}
+
+/* Estilos para el contenedor de botones */
+.banner .content .button {
+    position: relative;
+    /* Posicionamiento relativo */
+}
+
+/* Estilos para los enlaces de botones (Watch y My List) */
+.banner .content .button a {
+    position: relative;
+    /* Posicionamiento relativo */
+    display: inline-block;
+    /* Muestra como bloque en línea */
+    margin-right: 10px;
+    /* Margen derecho para separar botones */
+    background: var(--primary);
+    /* Fondo del color primario (naranja) */
+    color: #ffffff;
+    /* Color blanco para el texto */
+    padding: 6px 20px;
+    /* Padding interno para el botón */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: 500;
+    /* Peso de fuente medio */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    transition: 0.5;
+    /* Transición suave de 0.5 segundos */
+    cursor: pointer;
+}
+
+/* Estilos para el segundo botón (My List) */
+.banner .content .button a:nth-child(2) {
+    background: rgb(0, 0, 0, 0.7);
+    /* Fondo negro semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* Borde blanco semi-transparente */
+}
+
+/* Estilos al pasar el mouse sobre el segundo botón */
+.banner .content .button a:hover:nth-child(2) {
+    background: var(--primary);
+    /* Cambia al color primario (naranja) al hacer hover */
+}
+
+/* Estilos para el contenedor del carrusel de películas */
+.banner .carousel-box {
+    position: relative;
+    /* Posicionamiento relativo */
+    min-width: 950px;
+    /* Ancho mínimo para contener el carrusel */
+    display: flex;
+    /* Usa flexbox para centrar el carrusel */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    background: rgb(0, 0, 0, 0.7);
+    /* Fondo negro semi-transparente */
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+    /* Sombra para efecto de profundidad */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Borde blanco muy transparente */
+    backdrop-filter: blur(20px);
+    /* Efecto de desenfoque del fondo para glassmorphism */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+/* Estilos para el carrusel (hay un typo: debería ser "carousel") */
+.caruosel {
+    position: relative;
+    /* Posicionamiento relativo */
+    height: 550px;
+    /* Alto fijo del carrusel */
+    perspective: 1500px;
+    /* Perspectiva 3D para efectos de rotación */
+}
+
+/* Estilos para cada elemento del carrusel */
+.carousel .carousel-item {
+    width: 250px;
+    /* Ancho fijo de cada elemento */
+    cursor: pointer;
+    /* Cursor de mano para indicar que es clickeable */
+}
+
+/* Estilos para las imágenes dentro de cada elemento del carrusel */
+.carousel .carousel-item img {
+    max-width: 235px;
+    /* Ancho máximo de las imágenes */
+    border-radius: 10px;
+    /* Bordes redondeados para las imágenes */
+    transform: translateX(8px) translateY(-100px);
+    /* Transformación de posición para ajustar */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el contenedor */
+    object-position: center;
+    /* Posiciona la imagen al centro del contenedor */
+}
+
+/* Estilos para el enlace de reproducción del trailer */
+.play {
+    position: absolute;
+    /* Posicionamiento absoluto */
+    bottom: 50px;
+    /* Posición desde abajo de la pantalla */
+    left: 100px;
+    /* Posición desde la izquierda */
+    display: inline-flex;
+    /* Muestra como flex en línea */
+    justify-content: flex-start;
+    /* Alinea el contenido al inicio */
+    align-items: center;
+    /* Centra elementos verticalmente */
+    color: #ffffff;
+    /* Color blanco para el texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    font-weight: 500;
+    /* Peso de fuente medio */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+    font-size: 1.2em;
+    /* Tamaño de fuente ligeramente más grande */
+    cursor: pointer !important;
+    /* Cursor de mano obligatorio */
+    transition: 0.3s;
+    /* Transición suave de 0.3 segundos */
+}
+
+/* Estilos para el icono de reproducción */
+.play i {
+    margin-right: 10px;
+    /* Margen derecho para separar del texto */
+    font-size: 40px;
+    /* Tamaño de fuente grande para el icono */
+    cursor: pointer !important;
+    /* Cursor de mano obligatorio */
+}
+
+/* Estilos al pasar el mouse sobre el enlace de reproducción */
+.play:hover {
+    color: var(--primary);
+    /* Cambia al color primario (naranja) al hacer hover */
+}
+
+/* Estilos para la lista de redes sociales */
+.sci {
+    position: absolute;
+    /* Posicionamiento absoluto */
+    bottom: 50px;
+    /* Posición desde abajo de la pantalla */
+    right: 100px;
+    /* Posición desde la derecha */
+    display: inline-flex;
+    /* Muestra como flex en línea */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    gap: 25px;
+    /* Espacio entre elementos de redes sociales */
+}
+
+/* Estilos para los enlaces de redes sociales */
+.sci a {
+    color: #ffffff;
+    /* Color blanco para los iconos */
+    text-decoration: none;
+    /* Sin subrayado */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    font-weight: 500;
+    /* Peso de fuente medio */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+    font-size: 25px;
+    /* Tamaño de fuente para los iconos */
+    transition: 0.3s;
+    /* Transición suave de 0.3 segundos */
+    cursor: pointer;
+    /* Cursor de mano */
+}
+
+/* Estilos al pasar el mouse sobre los enlaces de redes sociales */
+.sci a:hover {
+    color: var(--primary);
+    /* Cambia al color primario (naranja) al hacer hover */
+}
+
+.trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transform: 0.5s;
+
+
+}
+
+.trailer .active{
+    visibility: visible;
+    opacity: 1; 
+}
+
+.trailer video{
+  max-width: 900px;
+  outline: none;
+}
+
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 30px;
+} 

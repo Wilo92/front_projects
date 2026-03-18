@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Movies Website</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">My movies</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="primary-nav" aria-expanded="false">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+        </button>
+        <nav>
+            <ul class="nav" id="primary-nav">
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href="#">Adults</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Trend</a></li>
+                <li><a href="#">My list</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="search" inputmode="search" autocomplete="off" placeholder="Buscar película">
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="content the-little-mermaid active">
+                <img src="./images/the-little-mermaid-title.png" alt="The Little Mermaid" class="movie-title">
+                <h4><span>2023</span><span><i>12+</i></span><span>2h 14 min</span><span>Romance</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptas itaque libero sapiente commodi ducimus? Nemo facilis autem sit aspernatur nisi rem temporibus repellendus consectetur. Aliquam, sapiente beatae. Qui, neque.</p>
+                <div class="button">
+                    <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Ver</a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My list</a>
+                </div>
+            </div>
+
+            <div class="content bg-65">
+                <img class="movie-title" src="./images/the-65-title.png" alt="65">
+                <h4><span>2023</span><span><i>16+</i></span><span>1h 40m</span><span>Thriller</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illo numquam doloribus omnis dolor sint odit facilis. Delectus doloremque corporis facere debitis fuga iure itaque. Nobis fugiat dolorem quia assumenda.</p>
+                <div class="button">
+                    <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Ver</a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My list</a>
+                </div>
+            </div>
+
+            <div class="content the-covenant">
+                <img class="movie-title" src="./images/the-covenant-title.png" alt="The Covenant">
+                <h4><span>2023</span><span><i>16+</i></span><span>1h 40m</span><span>Thriller</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illo numquam doloribus omnis dolor sint odit facilis. Delectus doloremque corporis facere debitis fuga iure itaque. Nobis fugiat dolorem quia assumenda.</p>
+                <div class="button">
+                    <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Ver</a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My list</a>
+                </div>
+            </div>
+
+            <div class="content the-black-demon">
+                <img class="movie-title" src="./images/the-black-demon-title.png" alt="The Black Demon">
+                <h4><span>2023</span><span><i>16+</i></span><span>1h 40m</span><span>Thriller</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illo numquam doloribus omnis dolor sint odit facilis. Delectus doloremque corporis facere debitis fuga iure itaque. Nobis fugiat dolorem quia assumenda.</p>
+                <div class="button">
+                    <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Ver</a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My list</a>
+                </div>
+            </div>
+
+            <div class="content the-tank">
+                <img class="movie-title" src="./images/the-tank-title.png" alt="The Tank">
+                <h4><span>2023</span><span><i>16+</i></span><span>1h 40m</span><span>Thriller</span></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illo numquam doloribus omnis dolor sint odit facilis. Delectus doloremque corporis facere debitis fuga iure itaque. Nobis fugiat dolorem quia assumenda.</p>
+                <div class="button">
+                    <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Ver</a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My list</a>
+                </div>
+            </div>
+
+            <div class="carousel-box">
+                <div class="carousel">
+                    <div class="carousel-item" onclick="changeBg('bg-little-mermaid.jpg','the-little-mermaid')">
+                        <img src="images/movies/the-little-mermaid.jpeg" alt="The Little Mermaid">
+                    </div>
+                    <div class="carousel-item" onclick="changeBg('bg-65.jpeg','bg-65')">
+                        <img src="images/movies/65.jpg" alt="65">
+                    </div>
+                    <div class="carousel-item" onclick="changeBg('bg-the-covenant.jpeg','the-covenant')">
+                        <img src="images/movies/the-covenant.jpg" alt="The Covenant">
+                    </div>
+                    <div class="carousel-item" onclick="changeBg('bg-the-black-demon.jpeg','the-black-demon')">
+                        <img src="images/movies/the-black-demon.jpg" alt="The Black Demon">
+                    </div>
+                    <div class="carousel-item" onclick="changeBg('bg-the-tank.jpeg','the-tank')">
+                        <img src="images/movies/the-tank.jpeg" alt="The Tank">
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="play" onclick="toggleVideo(); return false;"><i class="fa fa-play-circle-o" aria-hidden="true"></i>Ver trailer</a>
+
+            <ul class="sci">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </section>
+
+        <div class="trailer">
+            <video src="./assets/#" muted controls autoplay></video>
+            <img class="close" src="./images/close.png" alt="Cerrar" onclick="toggleVideo();">
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
